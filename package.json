@@ -1,0 +1,16 @@
+{
+  "name": "kcd2-dice",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "test": "npm run test -w @kcd2dice/shared && npm run test -w @kcd2dice/server",
+    "dev:server": "npm run dev -w @kcd2dice/server",
+    "dev:client": "npm run dev -w @kcd2dice/client"
+  }
+}
